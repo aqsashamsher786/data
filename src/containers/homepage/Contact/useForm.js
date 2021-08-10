@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import React ,  { useState, useEffect } from 'react';
 import Axios from "axios";
 const useForm =  (callback, validate) => {
   const [values, setValues] = useState({
@@ -30,10 +30,9 @@ const useForm =  (callback, validate) => {
   
    const handleSubmit = e => {
      e.preventDefault();
- 
      setErrors(validate(values));
      setIsSubmitting(true);
-     addClient();
+    
    };
  
 
@@ -41,11 +40,14 @@ const useForm =  (callback, validate) => {
     () => {
       if (Object.keys(errors).length === 0 && isSubmitting) {
         callback();   
-        
+        createGraphics();
       }
     },
     [callback,errors,isSubmitting]
   );
+  const createGraphics = React.useCallback(() => { 
+    addClient();
+  }, [ addClient]);
 
   return { handleChange, handleSubmit, values, errors };
 };

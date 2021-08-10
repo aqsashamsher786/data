@@ -12,12 +12,14 @@ import { DataEngineering } from "./containers/Pages/DataEngineering";
 import { ArtificialIntelligence } from "./containers/Pages/ArtificalIntelligence/AI";
 import { Governance } from "./containers/Pages/Governance/Governance";
 import { OurJob } from "./containers/Pages/Job/job";
+import {Pdf } from "./pdf";
+import {CV} from "./containers/cv"
 const PageContainer = styled.div`
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
-  background-color: black;
+  background-color: white;
 `;
 function _ScrollToTop(props) {
   const { pathname } = useLocation();
@@ -40,6 +42,7 @@ export default class App extends Component {
       <ScrollToTop>
       <Navbar/>
       <TopSection />
+      <Pdf/>
       <Switch>
          <Route path="/" exact component= {Homepage} />  
          <Route path='/cloud' exact component= {Cloud} /> 
@@ -47,10 +50,13 @@ export default class App extends Component {
          <Route path='/ArtificialIntelligence' exact component= {ArtificialIntelligence} /> 
          <Route path='/Governance' exact component= { Governance} />
          <Route path='/Job' exact component= {OurJob} />
+         <Route path='/cv' exact component= {CV} />
       </Switch>
     <Marginer direction="vertical" margin="4rem" />
+  
       <Footer/>
       </ScrollToTop>
+      
     </PageContainer>
     </Router>
   );

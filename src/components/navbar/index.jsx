@@ -157,11 +157,11 @@ export function Navbar(props) {
           <li className='nav-item'>
             <NavLink 
             activeClassName='active'
-            to= '/Job'   
+            to= '/cv'   
            className='nav-links'
            onClick={closeMobileMenu}
             >
-           Job
+           cv
             </NavLink>
           </li>
           <li
