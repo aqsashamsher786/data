@@ -17,7 +17,7 @@ const useForm =  (callback, validate) => {
       [name]: value
     });
   };
-  const addClient = () => {
+ /*  const addClient = () => {
     Axios.post("http://localhost:3002/create", {
       username: values.username,
       email: values.email,
@@ -25,7 +25,7 @@ const useForm =  (callback, validate) => {
       telephone : values.telephone,
     })
   };
-
+ */
 
   
    const handleSubmit = e => {
@@ -45,10 +45,10 @@ const useForm =  (callback, validate) => {
     },
     [callback,errors,isSubmitting]
   );
-  const createGraphics = React.useCallback(() => { 
+/*   const createGraphics = React.useCallback(() => { 
     addClient();
   }, [ addClient]);
-
+ */
   return { handleChange, handleSubmit, values, errors };
 };
 
