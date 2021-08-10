@@ -81,7 +81,7 @@ export default class PageList extends React.PureComponent {
         }
         return globalScale * pageScale;
     };
-    componentWillReceiveProps = nextProps => {
+    getDerivedStateFromProps = nextProps => {
         if (
             EXPERIMENTAL_VIRTUALIZED &&
             this.list &&
