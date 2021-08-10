@@ -81,7 +81,7 @@ export default class PageList extends React.PureComponent {
         }
         return globalScale * pageScale;
     };
-    getDerivedStateFromProps = nextProps => {
+   static getDerivedStateFromProps = nextProps => {
         if (
             EXPERIMENTAL_VIRTUALIZED &&
             this.list &&
@@ -89,6 +89,7 @@ export default class PageList extends React.PureComponent {
         ) {
             this.list.forceUpdateGrid();
         }
+        return null;
     };
     render() {
         const { pageCount } = this.props;
