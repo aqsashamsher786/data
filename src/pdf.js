@@ -36,11 +36,11 @@ export const Pdf = () => {
       console.log('select your file');
     }
   }
-  const addPdf = (file) => {
+ /*  const addPdf = (file) => {
     Axios.post("http://localhost:3002/file", {
       file : file ,
     })
-  };
+  }; */
   // form submit
   const handlePdfFileSubmit=(e)=>{
     e.preventDefault();
