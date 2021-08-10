@@ -12,7 +12,6 @@ import { DataEngineering } from "./containers/Pages/DataEngineering";
 import { ArtificialIntelligence } from "./containers/Pages/ArtificalIntelligence/AI";
 import { Governance } from "./containers/Pages/Governance/Governance";
 import { OurJob } from "./containers/Pages/Job/job";
-import {Pdf } from "./pdf";
 import {CV} from "./containers/cv"
 const PageContainer = styled.div`
   width: 100%;
@@ -42,7 +41,6 @@ export default class App extends Component {
       <ScrollToTop>
       <Navbar/>
       <TopSection />
-      <Pdf/>
       <Switch>
          <Route path="/" exact component= {Homepage} />  
          <Route path='/cloud' exact component= {Cloud} /> 
