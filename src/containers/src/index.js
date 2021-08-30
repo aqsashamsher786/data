@@ -42,7 +42,7 @@ export default  class App extends React.Component {
                     onClose={() => this.setState({ show: false })}
                     toolbar={
                         <div>
-                        <a href='./docs/Cv.pdf' 
+                        <a href='Cv.pdf' 
                          download="Cv.pdf"> 
                     <button className="btn btn-primary">
                            Download
