@@ -39,6 +39,7 @@ export default  class App extends React.Component {
             {this.state.show && (
                 <DocumentPreview
                     show={this.state.show}
+                    onLoad = {console.log(this.state.file)}
                     file={this.state.file}
                     onClose={() => this.setState({ show: false })}
                     toolbar={
