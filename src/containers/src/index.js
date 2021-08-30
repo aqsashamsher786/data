@@ -25,7 +25,7 @@ export default  class App extends React.Component {
             <Button
                 bsstyle="primary"
                 onClick={this.preview.bind(this, multiPagePdfFile)}
-                onLoadError={console.error}
+                onLoad = {console.log(multiPagePdf)}
             >
                 Show Multi Page Pdf
             </Button>
