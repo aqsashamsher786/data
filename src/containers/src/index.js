@@ -35,6 +35,9 @@ export default  class App extends React.Component {
             <Button
                 bsstyle="primary"
                 onClick={this.preview.bind(this, mixedOrientationPdfFile)}
+                options={{ workerSrc:
+                    'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.0.305/pdf.worker.min.js'
+             }}
             >
                 Show Mixed Orientation Pdf
             </Button>
