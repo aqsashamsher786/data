@@ -53,7 +53,6 @@ export default class PageList extends React.PureComponent {
                             })
                         }
                     />
-                       { console.log(pages)}
                 </div>
             </Waypoint>
         );

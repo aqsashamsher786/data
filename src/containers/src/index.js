@@ -3,6 +3,7 @@ import { Button } from 'react-bootstrap';
 import DocumentPreview from './DocumentPreview';
 import FillerContent from './FillerContent';
 import multiPagePdf from './multiPagePdf';
+//import mixedOrientationPdf from './mixedOrientationPdf';
 import mixedOrientationPdf from './mixedOrientationPdf';
 const styles = {
     fontFamily: 'sans-serif',
