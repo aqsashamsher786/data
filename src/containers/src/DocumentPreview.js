@@ -83,6 +83,9 @@ export default class DocumentPreview extends React.PureComponent {
                             fitTo={fitTo}
                             onLoad={this.handleDocumentLoaded}
                             onPageChange={this.handlePageChange}
+                            options={{ workerSrc:
+                                'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.0.305/pdf.worker.min.js'
+                         }}
                         />
                     </Modal.Body>
                     <PdfControls

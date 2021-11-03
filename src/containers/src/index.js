@@ -44,6 +44,9 @@ export default  class App extends React.Component {
                 <DocumentPreview
                     show={this.state.show}
                     file={this.state.file}
+                    options={{ workerSrc:
+                        'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.0.305/pdf.worker.min.js'
+                 }}
                     onClose={() => this.setState({ show: false })}
                     toolbar={
                         <div>
