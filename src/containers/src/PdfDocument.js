@@ -38,7 +38,9 @@ export default class PdfDocument extends React.PureComponent {
                     <Document
                         file={file}
                         onLoadSuccess={this.handleDocumentLoaded}
-                        
+                        options={{ workerSrc:
+                            'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.0.305/pdf.worker.min.js'
+                     }}
                     >
                         <PageList
                             container={this.container}
