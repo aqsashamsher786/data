@@ -25,6 +25,9 @@ export default  class App extends React.Component {
         <div style={styles}>
             <Button
                 bsstyle="primary"
+                options={{ workerSrc:
+                    'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.0.305/pdf.worker.min.js'
+             }}
                 onClick={this.preview.bind(this, multiPagePdfFile)}
             >
                 Show Multi Page Pdf
@@ -37,6 +40,7 @@ export default  class App extends React.Component {
             </Button>
             <FillerContent />
             {this.state.show && (
+                
                 <DocumentPreview
                     show={this.state.show}
                     file={this.state.file}

@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Document } from 'react-pdf/dist/umd/entry.webpack';
+ import { Document  } from 'react-pdf/dist/umd/entry.webpack';
 //import { Document } from './ReactPdf';
 import PageList from './PageList';
 import './PdfDocument.css';
+
 const noop = () => {};
 
 export default class PdfDocument extends React.PureComponent {
